@@ -1,7 +1,13 @@
 export default function Cv() {
   return (
     <div>
-      <p>My Cv</p>
+      <div className="flex flex-col w-3/4 m-auto items-center">
+        <h1 className="text-lg p-3">Resume</h1>
+
+        <a href="/CV.pdf">
+          <button className="bg-blue-300  p-4 rounded-lg">View Resume →</button>
+        </a>
+      </div>
     </div>
   );
 }

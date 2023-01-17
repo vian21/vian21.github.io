@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <div className="">
-        <div className=" grid  m-auto w-11/12">
+        <div className="grid m-auto w-11/12">
           <center>
             <h1 className="text-2xl">About Me</h1>
           </center>

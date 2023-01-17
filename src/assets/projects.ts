@@ -1,9 +1,50 @@
 export default [
-  {
-    name: "School management System",
-    stack: ["PHP", "MySQL", "JS", "jQuery", "CSS"],
-    link: "",
-    preview: "",
-    time: "Jan 2012- Jan 2013",
-  },
+    {
+        name: "COOP Scrapper",
+        description: "Web scaper for indEX Engineering job postings",
+        stack: "NodeJS, Cherrio.js",
+        link: "https://github.com/vian21/coop-scraper",
+        preview: "",
+        time: "Jan 2021",
+    },
+    {
+        name: "Ableton Click",
+        description: "Ableton Live web metronome - Forked from @ablm. \nI wanted an Ableton live click and found this awesome project. I forked it and added a volume control feature which I felt it lacked to make 100% awesome 😎.",
+        stack: "HTML, CSS, JS, Browser sound API",
+        link: "https://vian21.github.io/click/",
+        preview: "",
+        time: "Nov 2022",
+    },
+    {
+        name: "School Mangement System",
+        description: "A school management system that stores students’ records and school transactions; giving administrators the capability to generate reports,class lists, account balances, students’ accounts and many more functionalities to ensure that most of their time is spent to help students not on administrative tasks.",
+        stack: "PHP, MySQL, jQuery, CSS, JSON",
+        link: "https://github.com/vian21/school-system",
+        preview: "",
+        time: "Jul 2020",
+    },
+    {
+        name: "Social Media App",
+        description: "Social media app with WhatsApp-like stories, and Instagram-like feed and messaging, created to reconnect former high school friends.",
+        stack: "MySQL, ExpressJS, React, NOdeJS & Tailwind CSS",
+        link: "https://github.com/vian21/gia-web-app",
+        preview: "",
+        time: "Feb 2022",
+    },
+    {
+        name: "E-commerce Website",
+        description: "Commerce platform that enables online sales and delivery of products using Google Maps and the location API. Made with the intent to introduce online shopping and delivery in Burundi.",
+        stack: "MySQL, PHP & jQuery",
+        link: "https://github.com/vian21/eshop",
+        preview: "",
+        time: "2020",
+    },
+    {
+        name: "Weight Tracker - PWA",
+        description: "Progressive Web Application that works offline and can be installed on any device with a browser. The app stores the user\’s weight data in local Storage and uses Chart.js to plot the data on a graph to show a trend in weight gain or loss.",
+        stack: "HTML, CSS, JS & Chart.js",
+        link: "https://github.com/vian21/weight-tracker",
+        preview: "",
+        time: "Nov 2021",
+    }
 ];

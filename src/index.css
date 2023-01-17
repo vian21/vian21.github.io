@@ -16,6 +16,7 @@ body,
   margin: 0;
 }
 
+/* @layer components { */
 html.dark {
   @apply bg-slate-800 text-white;
 }
@@ -30,16 +31,15 @@ html.dark .nav-link {
 
 h1,
 p {
-  @apply m-3
+  @apply m-3;
 }
+/* } */
 
 .container {
   min-height: 100%;
   margin: 0 auto -80px;
-
 }
 
 .footer {
   height: 800px;
-
 }
