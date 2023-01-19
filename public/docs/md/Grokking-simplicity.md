@@ -14,4 +14,3 @@
 
 - Always prefer the use of pure functions for functional programming
 - if a function is doing more than one thing split it into multiple functions
--

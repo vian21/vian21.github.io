@@ -1,13 +1,16 @@
 # Deploying a Vite Site to Github Pages
+
 Date: Thu, Jan, 5th, 2022
 
 I was not able to find a github workflow for vite to upload my portfolio to github pages. I did some extensive research but could not find any due to the following restrictions:
 
 - I wanted to make a website for my main github pages link e.g `vian21.github.io`. Github pages does not allow that and requires you to add the repo name after the domain e.g `vian21.github.io/vian21`.
-- Most workflows are outdated and not really well document. you have to try everyone of them and the feedback loop is so slow  you have to wait for at least 1 min to see the effects of you changes.
+- Most workflows are outdated and not really well document. you have to try everyone of them and the feedback loop is so slow you have to wait for at least 1 min to see the effects of you changes.
 
 # Solution
+
 Use a bash script to:
+
 1. Build the project
 1. Push the build to a remote repository that will only contain those static assets
 
