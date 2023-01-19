@@ -8,7 +8,7 @@ export default function Projects() {
         {projects.map((project, id) => {
           return (
             <li
-              className="hover:bg-green-200 dark:hover:bg-slate-600  m-1 p-3"
+              className="hover:bg-green-200 hover:dark:bg-slate-600 m-1 p-3"
               key={id}
             >
               <a
@@ -17,12 +17,6 @@ export default function Projects() {
                 target="_blank"
                 rel="noreferrer"
               >
-                {/* <img 
-                  className="w-1/2 m-auto mb-3"
-                  src={project.preview || "/atom.png"}
-                  alt={project.name}
-                /> */}
-
                 <p className="text-xl underline">{project.name} →</p>
               </a>
 

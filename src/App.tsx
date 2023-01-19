@@ -13,7 +13,7 @@ export default function App() {
     } else {
       document.documentElement.classList.remove("dark");
     }
-  });
+  }, []);
 
   return (
     <div className="h-full">

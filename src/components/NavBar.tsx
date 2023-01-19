@@ -9,12 +9,19 @@ export default function NavBar() {
       return false;
     }
   }
+
   function toggleMode() {
     if (inDarkMode()) {
       document.documentElement.classList.remove("dark");
+
+      localStorage.setItem("theme", "light");
+
       setMode(false);
     } else {
       document.documentElement.classList.add("dark");
+
+      localStorage.setItem("theme", "dark");
+
       setMode(true);
     }
   }

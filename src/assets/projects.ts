@@ -26,7 +26,7 @@ export default [
     {
         name: "Social Media App",
         description: "Social media app with WhatsApp-like stories, and Instagram-like feed and messaging, created to reconnect former high school friends.",
-        stack: "MySQL, ExpressJS, React, NOdeJS & Tailwind CSS",
+        stack: "MySQL, ExpressJS, React, NodeJS & Tailwind CSS",
         link: "https://github.com/vian21/gia-web-app",
         preview: "",
         time: "Feb 2022",
