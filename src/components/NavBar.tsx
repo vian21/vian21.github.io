@@ -1,6 +1,49 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+function NavLinks(props: { hidden: boolean }) {
+  if (props.hidden) return null;
+  return (
+    <>
+      <li>
+        <Link className="nav-link" to="/">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link className="nav-link" to="/about">
+          About
+        </Link>
+      </li>
+      <li>
+        <Link className="nav-link" to="/projects">
+          Projects
+        </Link>
+      </li>
+      <li>
+        <Link className="nav-link" to="/cv">
+          CV
+        </Link>
+      </li>
+      <li>
+        <Link className="nav-link" to="/Contacts">
+          Contact Me
+        </Link>
+      </li>
+      <li>
+        <Link className="nav-link" to="/shell">
+          Terminal
+        </Link>
+      </li>
+      <li>
+        <a className="nav-link" href="/docs/index.html">
+          Docs
+        </a>
+      </li>
+    </>
+  );
+}
+
 export default function NavBar() {
   function inDarkMode() {
     if (document.documentElement.classList.contains("dark")) {
@@ -28,6 +71,9 @@ export default function NavBar() {
 
   const dark = localStorage.getItem("theme") === "dark" ? true : false;
   const [mode, setMode] = useState(dark);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [showNav, setShowNav] = useState(false);
+
   useEffect(() => {
     if (inDarkMode()) {
       setMode(true);
@@ -37,7 +83,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="flex justify-between sticky w-full items-center p-2">
+    <div className="flex justify-between sticky w-full p-2">
       <div className="w-8 h-8">
         {/* Home button*/}
         <Link className="" to="/">
@@ -48,41 +94,10 @@ export default function NavBar() {
       {/* Nav bar */}
       <nav>
         <ul className="m-0 p-0 list-none flex gap-2 items-center">
-          <li>
-            <Link className="nav-link" to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link" to="/about">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link" to="/projects">
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link" to="/cv">
-              CV
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link" to="/Contacts">
-              Contact Me
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link" to="/shell">
-              Terminal
-            </Link>
-          </li>
-          <li>
-            <a className="nav-link" href="/docs/index.html">
-              Docs
-            </a>
-          </li>
+          {/* Nav links */}
+          <NavLinks hidden={windowWidth < 750 ? true : false} />
+
+          {/* dark mode toggle */}
           <li onClick={toggleMode}>
             {/* <button className="nav-link" onClick={toggleMode}>
               Dark Mode
@@ -119,6 +134,29 @@ export default function NavBar() {
               </svg>
             )}
           </li>
+
+          {windowWidth < 750 ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="mx-2 w-6 h-6"
+              onClick={() => {
+                setShowNav(!showNav);
+              }}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          ) : null}
+          <div className="absolute right-1/2 top-2 width-4/5 m-auto">
+            <NavLinks hidden={false} />
+          </div>
         </ul>
       </nav>
     </div>
