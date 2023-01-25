@@ -72,7 +72,7 @@ export default function NavBar() {
   const dark = localStorage.getItem("theme") === "dark" ? true : false;
   const [mode, setMode] = useState(dark);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(true);
 
   useEffect(() => {
     if (inDarkMode()) {
@@ -154,9 +154,9 @@ export default function NavBar() {
               />
             </svg>
           ) : null}
-          <div className="absolute right-1/2 top-2 width-4/5 m-auto">
-            <NavLinks hidden={false} />
-          </div>
+          <ul className="absolute bg-green-200 drop-shadow-2xl divide-y-2 divide-gray-100 flex flex-col gap-2 right-2 rounded-md z-10 p-3 top-10 empty:hidden">
+            <NavLinks hidden={showNav} />
+          </ul>
         </ul>
       </nav>
     </div>

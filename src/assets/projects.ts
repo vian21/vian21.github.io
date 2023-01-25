@@ -1,7 +1,7 @@
 export default [
     {
         name: "COOP Scrapper",
-        description: "Web scaper for indEX Engineering job postings",
+        description: "Web scraper for indEX Engineering job postings",
         stack: "NodeJS, Cherrio.js",
         link: "https://github.com/vian21/coop-scraper",
         preview: "",
@@ -9,14 +9,14 @@ export default [
     },
     {
         name: "Ableton Click",
-        description: "Ableton Live web metronome - Forked from @ablm. \nI wanted an Ableton live click and found this awesome project. I forked it and added a volume control feature which I felt it lacked to make 100% awesome 😎.",
-        stack: "HTML, CSS, JS, Browser sound API",
+        description: "Ableton Live web metronome - Forked from @ablm. \nI wanted an Ableton live click and found this awesome project. I forked it and added a volume control feature which I felt it lacked, to make it 100% awesome 😎.",
+        stack: "HTML, CSS, JS, Browser Sound API",
         link: "https://vian21.github.io/click/",
         preview: "",
         time: "Nov 2022",
     },
     {
-        name: "School Mangement System",
+        name: "School Management System",
         description: "A school management system that stores students’ records and school transactions; giving administrators the capability to generate reports,class lists, account balances, students’ accounts and many more functionalities to ensure that most of their time is spent to help students not on administrative tasks.",
         stack: "PHP, MySQL, jQuery, CSS, JSON",
         link: "https://github.com/vian21/school-system",

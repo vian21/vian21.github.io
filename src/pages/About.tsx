@@ -45,13 +45,13 @@ export default function About() {
 
           <p>
             I love tweaking software, making music and figuring stuff out. I
-            play mainly the electric guitar(for now) but I am also working on
+            mainly play the electric guitar(for now) but I am also working on
             improving my piano 🎹 skills as well as my musical ear. I play the
             acoustic, bass, piano and unfortunately no drums(yet 😁).
           </p>
 
           <p>
-            I am have mostly worked on the web, exploring all its greatness and
+            I have mostly worked on the web, exploring all its greatness and
             beauty, and lately I have started gaining interest in embedded
             software, operating systems and cybersecurity 🤖.
           </p>
