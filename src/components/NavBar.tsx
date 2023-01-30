@@ -80,6 +80,11 @@ export default function NavBar() {
     } else {
       setMode(false);
     }
+    document.addEventListener("resize", () => {});
+    const links = document.querySelector(".nav-link");
+    links?.addEventListener("click", () => {
+      console.log("clicked");
+    });
   }, []);
 
   return (
