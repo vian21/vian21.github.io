@@ -16,6 +16,10 @@
   - [Rust](md/Rust.md)
   - [Functional Programming](md/Grokking-simplicity.md)
   - [Using Git](md/Git.md)
+  - [Using Docker](md/Docker.md)
+  - [Concurency](md/Concurent-resource-access.md)
+  - [Python unittest](md/Python-unittesting.md)
+  - [Go](md/Go.md)
 - Music
   - [Modes](md/Modes.md)
   - [Seventh chords](md/Sevenths.md)
