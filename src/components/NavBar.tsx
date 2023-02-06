@@ -68,11 +68,13 @@ export default function NavBar() {
       setMode(true);
     }
   }
-
   const dark = localStorage.getItem("theme") === "dark" ? true : false;
   const [mode, setMode] = useState(dark);
+
+  const minWidth = 750;
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [showNav, setShowNav] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     if (inDarkMode()) {
@@ -80,10 +82,21 @@ export default function NavBar() {
     } else {
       setMode(false);
     }
-    document.addEventListener("resize", () => {});
-    const links = document.querySelector(".nav-link");
-    links?.addEventListener("click", () => {
-      console.log("clicked");
+
+    addEventListener("resize", () => {
+      if (window.innerWidth < minWidth) {
+        setShowNav(false);
+      } else {
+        setShowNav(true);
+      }
+
+      setWindowWidth(window.innerWidth);
+    });
+
+    const menu = document.querySelector(".menu");
+    menu?.addEventListener("click", (e) => {
+      console.log("menu clicked");
+      setShowMenu(false);
     });
   }, []);
 
@@ -100,7 +113,7 @@ export default function NavBar() {
       <nav>
         <ul className="m-0 p-0 list-none flex gap-2 items-center">
           {/* Nav links */}
-          <NavLinks hidden={windowWidth < 750 ? true : false} />
+          <NavLinks hidden={!showNav} />
 
           {/* dark mode toggle */}
           <li onClick={toggleMode}>
@@ -140,7 +153,7 @@ export default function NavBar() {
             )}
           </li>
 
-          {windowWidth < 750 ? (
+          {windowWidth < minWidth ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -149,7 +162,7 @@ export default function NavBar() {
               stroke="currentColor"
               className="mx-2 w-6 h-6"
               onClick={() => {
-                setShowNav(!showNav);
+                setShowMenu(!showMenu);
               }}
             >
               <path
@@ -158,9 +171,11 @@ export default function NavBar() {
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
-          ) : null}
-          <ul className="absolute bg-green-200 drop-shadow-2xl divide-y-2 divide-gray-100 flex flex-col gap-2 right-2 rounded-md z-10 p-3 top-10 empty:hidden">
-            <NavLinks hidden={showNav} />
+          ) : (
+            false
+          )}
+          <ul className="menu absolute bg-green-200 drop-shadow-2xl divide-y-2 divide-gray-100 flex flex-col gap-2 right-2 rounded-md z-10 p-3 top-10 empty:hidden">
+            <NavLinks hidden={!showMenu} />
           </ul>
         </ul>
       </nav>
