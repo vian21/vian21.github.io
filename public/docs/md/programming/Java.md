@@ -14,15 +14,15 @@ public class NameOfFile{
 
 ### Numbers
 
-- int
-- double
-- float
-- long
+- int (Integer)
+- double (Double)
+- float (Float)
+- long (Long)
 
 ### Strings
 
 - String
-- char
+- char (Character)
 
 ### Boolean
 
@@ -55,6 +55,10 @@ get length of array. `array.length`
    - Specifies that a variable or a method belongs to the class, rather than a specific instance
    - Like a class variable. all instances of the class will share this value, if it is changed in one, it will affect all others
 3. method signature: -` A function's signatures is the number of params and their types`
+
+4. public: can be accessed by anyone and inherited by subclasses
+5. private: can only be accessed by the class itself and can not be inherited by subclasses
+6. protected: can only be accessed by the class itself and can be inherited subclasses
 
 ## Variables
 
@@ -253,3 +257,37 @@ class Main{
 Hello
 World
 ```
+
+## Why And When To Use Interfaces?
+
+1. Java does not allow inheriting from multiple classes. But it allows implementing multiple interfaces.
+
+```java
+interface A{
+    public void methodA();
+}
+interface B{
+    public void methodB();
+}
+// C can implement both A and B
+class C implements A, B{
+    public void methodA(){
+        System.out.println("Method A");
+    }
+    public void methodB(){
+        System.out.println("Method B");
+    }
+}
+```
+
+# Stacks
+
+basic ops:
+
+- `push`
+- `pop`
+- `peek`: returns the top element of the stack without removing it
+- `isEmpty`
+
+- `Lexical analyser`: takes a string and breaks it into tokens
+- `Syntax analyser`: takes tokens and checks if they are in the correct order and parses it

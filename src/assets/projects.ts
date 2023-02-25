@@ -11,7 +11,7 @@ export default [
         name: "Ableton Click",
         description: "Ableton Live web metronome - Forked from @ablm. \nI wanted an Ableton live click and found this awesome project. I forked it and added a volume control feature which I felt it lacked, to make it 100% awesome 😎.",
         stack: "HTML, CSS, JS, Browser Sound API",
-        link: "https://vian21.github.io/click/",
+        link: "https://github.com/vian21/click",
         preview: "",
         time: "Nov 2022",
     },

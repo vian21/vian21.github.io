@@ -8,7 +8,7 @@ export default function Projects() {
         {projects.map((project, id) => {
           return (
             <li
-              className="hover:bg-green-500 dark:hover:bg-slate-500 dark:hover:text-white m-1 p-3"
+              className="hover:bg-slate-500 hover:text-white m-1 p-3"
               key={id}
             >
               <a

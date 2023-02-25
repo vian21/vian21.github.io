@@ -6,7 +6,7 @@ export default function About() {
       <div className="">
         <div className="grid m-auto w-11/12">
           <center>
-            <h1 className="text-2xl">About Me</h1>
+            <h1 className="font-bold text-2xl">About Me</h1>
           </center>
           {/* <p>
             <span className="font-bold">Name</span>: Patrick Igiraneza
@@ -59,7 +59,10 @@ export default function About() {
           <p>Take a look of some cool stuff I have worked on!</p>
 
           <center>
-            <Link to="/projects" className="bg-blue-300  p-4 rounded-lg">
+            <Link
+              to="/projects"
+              className="bg-blue-300 p-3 my-3 font-medium rounded-lg text-white"
+            >
               Projects →
             </Link>
           </center>

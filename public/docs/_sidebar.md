@@ -2,24 +2,30 @@
 
   - JS
     - [Deploying a Vite Site to Github Pages](md/vite-deploy.md)
-    - [React JS](md/React.md)
+    - [React JS](md/programming/React.md)
     - [Testing (Jest | Vitest)](md/Testing.md)
   - CSS
 
 - Linux & deployments
 
-  - [Make Files](md/Makefile.md)
+  - [Make Files](md/linux/Makefile.md)
+  - [Using Docker](md/linux/Docker.md)
 
 - Embedded
+- Books
+
+  - [Functional Programming](md/books/Grokking-simplicity.md)
+  - [Clean Code](md/books/Clean-code.md)
+
 - Programming
-  - [Java](md/Java.md)
-  - [Rust](md/Rust.md)
-  - [Functional Programming](md/Grokking-simplicity.md)
-  - [Using Git](md/Git.md)
-  - [Using Docker](md/Docker.md)
-  - [Concurency](md/Concurent-resource-access.md)
-  - [Python unittest](md/Python-unittesting.md)
-  - [Go](md/Go.md)
+
+  - [Java](md/programming/Java.md)
+  - [Rust](md/programming/Rust.md)
+  - [Using Git](md/programming/Git.md)
+  - [Concurency](md/programming/Concurent-resource-access.md)
+  - [Python unittest](md/programming/Python-unittesting.md)
+  - [Go](md/programming/Go.md)
+
 - Music
   - [Modes](md/Modes.md)
   - [Seventh chords](md/Sevenths.md)
