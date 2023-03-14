@@ -66,3 +66,11 @@ clean code: - runs all tests - contains no `duplication` - minimizes the number 
 - caller above callee
 - Instance variable should be declared in one place either at the top of the file or bottom
 - Preferably, at the top and not scattered through the implementation
+
+## Classes vs Objects
+
+- Objects: objects hide their data behing absractions and provide functions to operate on them
+- Data structure: data structures expose their data and have no meaningful functions
+
+- Procedural programming makes it easier to add new functions and makes it harder to add new data structures
+- OOP makes is easy to add new class/data structures while making it harder to add new functions. They have to be overloaded in inherited classes.
