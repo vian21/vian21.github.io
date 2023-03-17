@@ -22,7 +22,7 @@ html.dark {
 }
 
 .nav-link {
-  @apply py-2 px-2 text-black;
+  @apply my-2 mx-2 text-black;
 }
 
 html.dark .nav-link {

@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function NavLinks(props: { hidden: boolean }) {
-  if (props.hidden) return null;
+  if (props.hidden) return <></>;
+
   return (
     <>
       <li>
@@ -68,14 +69,22 @@ export default function NavBar() {
       setMode(true);
     }
   }
+
   const dark = localStorage.getItem("theme") === "dark" ? true : false;
   const [mode, setMode] = useState(dark);
 
   const minWidth = 750;
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(isDesktop());
   const [showMenu, setShowMenu] = useState(false);
 
+  function isDesktop() {
+    if (window.innerWidth < minWidth) {
+      return false;
+    }
+
+    return true;
+  }
   useEffect(() => {
     if (inDarkMode()) {
       setMode(true);
@@ -84,9 +93,10 @@ export default function NavBar() {
     }
 
     addEventListener("resize", () => {
-      if (window.innerWidth < minWidth) {
+      if (!isDesktop()) {
         setShowNav(false);
       } else {
+        setShowMenu(false);
         setShowNav(true);
       }
 
@@ -153,7 +163,7 @@ export default function NavBar() {
             )}
           </li>
 
-          {windowWidth < minWidth ? (
+          {!isDesktop() ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -174,7 +184,8 @@ export default function NavBar() {
           ) : (
             false
           )}
-          <ul className="menu absolute bg-green-200 drop-shadow-2xl divide-y-2 divide-gray-100 flex flex-col gap-2 right-2 rounded-md z-10 p-3 top-10 empty:hidden">
+
+          <ul className="menu absolute bg-slate-700 drop-shadow-2xl  divide-y-2 divide-gray-100 flex flex-col gap-y-2 right-2 rounded-md z-10 p-3 top-10 empty:hidden my-auto">
             <NavLinks hidden={!showMenu} />
           </ul>
         </ul>
