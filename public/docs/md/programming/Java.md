@@ -291,3 +291,29 @@ basic ops:
 
 - `Lexical analyser`: takes a string and breaks it into tokens
 - `Syntax analyser`: takes tokens and checks if they are in the correct order and parses it
+
+## Binary Trees
+- A binary tree is a hierachical data structure made in a way such that every node has a value and two children nodes(left and right)
+- Profondeur/ depth: is the number of nodes you have to traverse from the root to reach an element. The depth of the root is 0
+
+### Functions
+- contains
+- 
+### contains(E element)
+- uses a recursive algorithm to traverse tree until element is found
+- traverse any direction first and stop when last element in that direction does not have an element in that direction
+- ordered elements preferably. Greater than current value go right and vice versa
+
+## Traversing a Binary Tree to get all elements
+1. Pre-order/prefix: 
+    - check root
+    - check left
+    - check right
+1. Infix/ Symmetric: 
+    - check left
+    - check root
+    - check right
+1. Suffix/post-order: 
+    - check left
+    - check right
+    - check root
