@@ -25,6 +25,8 @@
   - [Concurency](md/programming/Concurent-resource-access.md)
   - [Python unittest](md/programming/Python-unittesting.md)
   - [Go](md/programming/Go.md)
+  - [Hamming Codes](md/programming/Hamming-codes.md)
+    - [React-Three-Fiber](md/programming/React-Three-Fiber.md)
 
 - Music
   - [Modes](md/Modes.md)
