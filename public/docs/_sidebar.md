@@ -1,3 +1,5 @@
+- Blog
+  - [Self-Hosting Chrome Extension](md/chrome-extension-deployment.md)
 - Web
 
   - JS

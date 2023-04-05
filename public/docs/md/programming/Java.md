@@ -54,7 +54,7 @@ get length of array. `array.length`
 2. static
    - Specifies that a variable or a method belongs to the class, rather than a specific instance
    - Like a class variable. all instances of the class will share this value, if it is changed in one, it will affect all others
-3. method signature: -` A function's signatures is the number of params and their types`
+3. method signature: -`A function's signatures is the number of params and their types`
 
 4. public: can be accessed by anyone and inherited by subclasses
 5. private: can only be accessed by the class itself and can not be inherited by subclasses
@@ -293,27 +293,95 @@ basic ops:
 - `Syntax analyser`: takes tokens and checks if they are in the correct order and parses it
 
 ## Binary Trees
+
 - A binary tree is a hierachical data structure made in a way such that every node has a value and two children nodes(left and right)
 - Profondeur/ depth: is the number of nodes you have to traverse from the root to reach an element. The depth of the root is 0
 
 ### Functions
+
 - contains
-- 
+-
+
 ### contains(E element)
+
 - uses a recursive algorithm to traverse tree until element is found
 - traverse any direction first and stop when last element in that direction does not have an element in that direction
 - ordered elements preferably. Greater than current value go right and vice versa
 
 ## Traversing a Binary Tree to get all elements
-1. Pre-order/prefix: 
-    - check root
-    - check left
-    - check right
-1. Infix/ Symmetric: 
-    - check left
-    - check root
-    - check right
-1. Suffix/post-order: 
-    - check left
-    - check right
-    - check root
+
+1. Pre-order/prefix: preOrder(Node): prints current element -> calls PreOrder(Node.left) -> calss preOrder(Node.right)
+   - check root
+   - check left
+   - check right
+1. Infix/ Symmetric:
+   - check left
+   - check root
+   - check right
+1. Suffix/post-order:
+   - check left
+   - check right
+   - check root
+
+- The above functions print all elements in the Btree in the order they are supposed to
+
+- `Visit(E element)` -> Print this element without modifying it
+
+## Binary Search Tree (BST)
+
+- each element on the left is less than root
+- each element right is greater than root
+- each is element has references to child nodes (left & right)
+
+- A BT is full if and only if all nodes has exactly 2 children
+- `Complete Binary Tree`: all levels at depth(d)-1 are all complete and have two nodes and all noes are as left as possible
+- Depth of Complete BT is log2(N) while in an unbalance Bt we would have to traverse N-1 connections.
+
+## Lists
+
+- ArrayList
+  - made using an array
+  - to add first element
+- LinkedList:
+  - `head` instance variable to keep track of the first element
+  -
+  - each element is a node with next attribute pointing to the next element
+  - the last element points to a null pointer (indication of last element)
+  - add instance variable `tail` makes it constant time to addd an element at the end of the array
+
+### functions
+
+---
+
+| fn                             | ArryList | LinkedList |
+| ------------------------------ | -------- | ---------- |
+| void addFirst(E elem)          | variable | const      |
+| void addLast(E elem)           | variable | const      |
+| void add(int position, E elem) | variable | variable   |
+| E get(int position)            | constant | variable   |
+| void remove(int position)      | variable | variable   |
+| void removeFirst()             | variable | constant   |
+| void removeLast()              | const    | variable   |
+
+- has to traversse list to reach last element
+- solve removeLast time complexity of linkedList, use double linked List with a pointer pointin forward and backward
+
+- `isEmpty()`
+- `.clear()`: clear list
+- `remove()` is variable because u need to resize array to free the memory and not use memory for nothing
+
+- `size()`
+  - better alternative is use an instance variable that counts the number of elements `.count`
+
+### comparison
+
+- Arraylist takes more space at first compared to LinkedList
+- but after LinkedList uses more space since it has a greater overhead(element + pointer to next)
+
+## DoubleLinkedList
+
+- every node has pointer forward and backward
+- SPECIAL CASEs:
+  - if list has one element, the element points to null on both sides
+  - adding the second element. it must point to the head(first element)
+- now `removeLast()` is constant time
