@@ -10,10 +10,9 @@
 
 The manifest must contain an update url pointing to a reference XML file that tells the browser what is the current version and where to get the new version if any.
 
-```json
+```js
 ...
   "update_url": "https://kaleidoscopic-souffle-3f8d58.netlify.app/update.xml",
-
 ...
 ```
 
@@ -92,7 +91,7 @@ sudo mkdir -p /etc/opt/chrome/policies/managed
 
 2. Add the following JSON config file as root on linux with any name you want
 
-```json
+```js
 {
   "ExtensionSettings": {
     "dndadjccaejaalofmmbdbgmegaolcghb": {
