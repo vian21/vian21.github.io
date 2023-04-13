@@ -1,11 +1,12 @@
 - Blog
-  - [Self-Hosting Chrome Extension](md/chrome-extension-deployment.md)
+  - [Self-Hosting Chrome Extension](md/blog/chrome-extension-deployment.md)
+  - [OWASP - Trend Micro Meet up](md/blog/Trend-micro.md)
 - Web
 
   - JS
-    - [Deploying a Vite Site to Github Pages](md/vite-deploy.md)
+    - [Deploying a Vite Site to Github Pages](md/blog/vite-deploy.md)
     - [React JS](md/programming/React.md)
-    - [Testing (Jest | Vitest)](md/Testing.md)
+    - [Testing (Jest | Vitest)](md/blog/Testing.md)
   - CSS
 
 - Linux & deployments
@@ -31,5 +32,5 @@
     - [React-Three-Fiber](md/programming/React-Three-Fiber.md)
 
 - Music
-  - [Modes](md/Modes.md)
-  - [Seventh chords](md/Sevenths.md)
+  - [Modes](md/blog/Modes.md)
+  - [Seventh chords](md/blog/Sevenths.md)

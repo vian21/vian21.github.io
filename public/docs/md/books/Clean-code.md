@@ -61,7 +61,7 @@ clean code: - runs all tests - contains no `duplication` - minimizes the number 
 - Comments should be placed to explain RegEx, warn or inform other developers why a certain implementation was used
 - None the less code should be self explanatory
 
-## FUnction order
+## Function order
 
 - caller above callee
 - Instance variable should be declared in one place either at the top of the file or bottom
@@ -69,8 +69,11 @@ clean code: - runs all tests - contains no `duplication` - minimizes the number 
 
 ## Classes vs Objects
 
-- Objects: objects hide their data behing absractions and provide functions to operate on them
-- Data structure: data structures expose their data and have no meaningful functions
+- `Objects`: objects hide their data behing absractions and provide functions to operate on them
+- `Data structure`: data structures expose their data and have no meaningful functions
 
 - Procedural programming makes it easier to add new functions and makes it harder to add new data structures
 - OOP makes is easy to add new class/data structures while making it harder to add new functions. They have to be overloaded in inherited classes.
+
+- objects are set of functions that operate on implied data elements
+- data structures are set of data elements operated on by implied functions
