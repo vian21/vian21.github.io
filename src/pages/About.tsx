@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ProductivityCharts } from "../components/ProductivityCharts";
 
 export default function About() {
   return (
@@ -8,34 +9,7 @@ export default function About() {
           <center>
             <h1 className="font-bold text-2xl">About Me</h1>
           </center>
-          {/* <p>
-            <span className="font-bold">Name</span>: Patrick Igiraneza
-          </p>
 
-          <p>
-            <span className="font-bold">Website</span>:
-            <a href="https://vian21.github.io" target="_blank" rel="noopener">
-              vian21.github.io
-            </a>
-          </p>
-
-          <p>
-            <span className="font-bold">Linkedin</span>:
-            <a
-              href="https://linkedin.com/in/patrick31/"
-              target="_blank"
-              rel="noopener"
-            >
-              @patrick31
-            </a>{" "}
-          </p>
-
-          <p>
-            <span className="font-bold">Github</span>:
-            <a href="https://github.com/vian21" target="_blank" rel="noopener">
-              @vian21
-            </a>{" "}
-          </p> */}
           <p>
             My name is Patrick Igiraneza, I am an enthusiastic Software/Web
             developer. I am originally from Burundi which is a country found in
@@ -61,11 +35,13 @@ export default function About() {
           <center>
             <Link
               to="/projects"
-              className="bg-blue-300 p-3 my-3 font-medium rounded-lg text-white"
+              className="bg-blue-300 p-3 my-4 font-bold rounded-lg text-white"
             >
               Projects →
             </Link>
           </center>
+          <h1 className="font-bold text-2xl m-auto mt-5">Stats</h1>
+          <ProductivityCharts />
         </div>
       </div>
     </>
