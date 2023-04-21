@@ -32,7 +32,7 @@ export const ProgrammingData: any = [
   {
     day: "2017-2023",
     hours: "2100",
-    type: ["Application", "Security"],
+    type: ["Application"],
     languages: ["Python"],
   },
   {
@@ -56,7 +56,7 @@ export const ProgrammingData: any = [
   { day: "2017-2023", hours: "500", type: ["Embedded"], languages: ["Rust"] },
   {
     day: "2017-2023",
-    hours: "200",
+    hours: "600",
     type: ["Security"],
     languages: ["Python", "PHP", "C/C++"],
   },

@@ -5,6 +5,7 @@ import {
   Legend,
   Colors,
 } from "chart.js";
+
 import { Pie } from "react-chartjs-2";
 
 import { ProgrammingData } from "../assets/hours";
@@ -24,6 +25,26 @@ export const ProductivityCharts = () => {
     ],
   };
 
+  /**
+   * Programming field hours
+   * Web Development
+   * Cyber Security
+   * Embedded Systems
+   *
+   * Not Included
+   * Frontend
+   * Backend
+   * Application
+   */
+  delete cleanedData.programmingFieldHours["Frontend"];
+  delete cleanedData.programmingFieldHours["Backend"];
+  delete cleanedData.programmingFieldHours["Application"];
+
+  cleanedData.types.delete("Frontend");
+  cleanedData.types.delete("Backend");
+  cleanedData.types.delete("Application");
+
+  console.log(cleanedData.types);
   const fieldStats = {
     labels: [...Array.from(cleanedData.types)],
     datasets: [
@@ -36,21 +57,12 @@ export const ProductivityCharts = () => {
 
   return (
     <div>
-      <div className="w-11/12 m-auto lg:w-4/5 mt-3">
-        <Pie
-          data={programmingData}
-          width={400}
-          height={400}
-          options={{ maintainAspectRatio: false }}
-        />
+      <div className="w-95 m-auto lg:w-4/12 mt-3">
+        <Pie data={programmingData} />
       </div>
-      <div className="w-11/12 m-auto lg:w-4/5 mt-5">
-        <Pie
-          data={fieldStats}
-          width={400}
-          height={400}
-          options={{ maintainAspectRatio: false }}
-        />
+
+      <div className="w-95 m-auto lg:w-4/12 mt-5">
+        <Pie data={fieldStats} />
       </div>
     </div>
   );
