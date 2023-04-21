@@ -10,7 +10,7 @@ const workTypes = [
   "Application",
 ];
 
-export const ProgrammingData = [
+export const ProgrammingData: any = [
   {
     day: "2017-2023",
     hours: "1200",
