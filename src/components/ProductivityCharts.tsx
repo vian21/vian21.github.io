@@ -1,9 +1,15 @@
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import {
+  Chart as ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend,
+  Colors,
+} from "chart.js";
 import { Pie } from "react-chartjs-2";
 
 import { ProgrammingData } from "../assets/hours";
 
-ChartJS.register(ArcElement, Tooltip, Legend);
+ChartJS.register(ArcElement, Tooltip, Legend, Colors);
 
 export const ProductivityCharts = () => {
   const cleanedData: CleanedData = cleanData(ProgrammingData);
