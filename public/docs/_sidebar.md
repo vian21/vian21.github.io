@@ -32,5 +32,12 @@
     - [React-Three-Fiber](md/programming/React-Three-Fiber.md)
 
 - Music
+
   - [Modes](md/blog/Modes.md)
   - [Seventh chords](md/blog/Sevenths.md)
+
+- Notes
+  - MAT1348
+    - [Lec 1](md/notes/MAT1348/lec1.md)
+    - [Lec 2](md/notes/MAT1348/lec2.md)
+    - [Lec 3](md/notes/MAT1348/lec3.md)
