@@ -60,4 +60,10 @@ export const ProgrammingData: any = [
     type: ["Security"],
     languages: ["Python", "PHP", "C/C++"],
   },
+  {
+    day: "2017-2023",
+    hours: "200",
+    type: ["Security"],
+    languages: [],
+  },
 ];

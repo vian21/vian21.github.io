@@ -44,7 +44,6 @@ export const ProductivityCharts = () => {
   cleanedData.types.delete("Backend");
   cleanedData.types.delete("Application");
 
-  console.log(cleanedData.types);
   const fieldStats = {
     labels: [...Array.from(cleanedData.types)],
     datasets: [
