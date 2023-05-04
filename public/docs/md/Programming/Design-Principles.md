@@ -1,7 +1,7 @@
 # Design Patterns
 - READ: Gang of Four patterns
 - Design patterns are ways/templates on how to solve specific problems. They are formalized as `best practices` to solve problems and build software.
-- They are categorized in 2 categories:
+- They are categorized in 3 categories:
     - Creational Patterns
     - Structural Patterns
     - Behavioral Patterns

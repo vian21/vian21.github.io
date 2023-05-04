@@ -17,6 +17,7 @@
 		- [Lec 3 - Mon, 16 Jan](md/Notes/MAT1348/lec3.md)
 - Programming
 	- [Concurrent resource access and sharing](md/Programming/Concurent-resource-access.md)
+	- [Design Patterns](md/Programming/Design-Principles.md)
 	- [Using Git](md/Programming/Git.md)
 	- [Go - Golang](md/Programming/Go.md)
 	- [Hamming Codes](md/Programming/Hamming-codes.md)
@@ -25,4 +26,5 @@
 	- [React Three fiber](md/Programming/React-Three-Fiber.md)
 	- [React](md/Programming/React.md)
 	- [Rust lang](md/Programming/Rust.md)
+	- [SOLID](md/Programming/SOLID.md)
 	- [TRPC - Typescript Remote Procedure Call](md/Programming/TRPC.md)
