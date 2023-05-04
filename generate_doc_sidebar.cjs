@@ -16,10 +16,10 @@ async function parseDocs() {
   fs.writeFileSync("public/docs/_sidebar.md", output);
 }
 
-function parseFolder(folder) {
+function parseFolder(folder, level = 1) {
   let output = "";
 
-  output += "- " + folder + "\n";
+  output += "\t".repeat(level - 1) + "- " + folder.split('/').at(-1) + "\n";
 
   const files = fs.readdirSync("public/docs/md/" + folder, {
     withFileTypes: true,
@@ -27,7 +27,7 @@ function parseFolder(folder) {
 
   files.forEach((file) => {
     if (file.isDirectory()) {
-      output += parseFolder(folder + "/" + file.name);
+      output += parseFolder(folder + "/" + file.name, level + 1);
 
       return output;
     };
@@ -39,7 +39,7 @@ function parseFolder(folder) {
 
     const title = data.split("\n")[0].replace("# ", "");
 
-    output += "\t- [" + title + "](md/" + folder + "/" + file.name + ")\n";
+    output += `${"\t".repeat(level)}- [${title}](md/${folder}/${file.name})\n`;
   });
 
   return output;

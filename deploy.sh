@@ -1,7 +1,11 @@
 #!/usr/bin/env sh
 
-# Generate doc side bar
+# Generate doc sidebar
+echo "☐ Generating documentation sidebar index"
+
 node generate_doc_sidebar.cjs
+
+echo "✓ Sidebar generated"
 
 # abort on errors
 set -e
