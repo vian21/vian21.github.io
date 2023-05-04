@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# Generate doc side bar
+node generate_doc_sidebar.cjs
+
 # abort on errors
 set -e
 

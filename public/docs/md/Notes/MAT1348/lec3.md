@@ -1,4 +1,4 @@
-Mon, 16 Jan
+# Lec 3 - Mon, 16 Jan
 
 # [De Morgan's law](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)
 

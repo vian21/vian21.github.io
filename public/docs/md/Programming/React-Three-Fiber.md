@@ -1,4 +1,4 @@
-## React Three fiber
+# React Three fiber
 
 - A react renderer for three.js
 - Three.js works in react and is more verbose

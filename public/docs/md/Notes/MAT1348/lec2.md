@@ -1,4 +1,4 @@
-# Thu, 12th, 2022
+# Lec 2 - Thu, 12th, 2022
 
 ## Contrapositive
 

@@ -1,43 +1,28 @@
 - Blog
-  - [Self-Hosting Chrome Extension](md/blog/chrome-extension-deployment.md)
-  - [OWASP - Trend Micro Meet up](md/blog/Trend-micro.md)
-- Web
-
-  - JS
-    - [Deploying a Vite Site to Github Pages](md/blog/vite-deploy.md)
-    - [React JS](md/programming/React.md)
-    - [Testing (Jest | Vitest)](md/blog/Testing.md)
-  - CSS
-
-- Linux & deployments
-
-  - [Make Files](md/linux/Makefile.md)
-  - [Using Docker](md/linux/Docker.md)
-
-- Embedded
+	- [Modes](md/Blog/Modes.md)
+	- [Seventh Chords](md/Blog/Sevenths.md)
+	- [Jest | Vitest](md/Blog/Testing.md)
+	- [Trend Micro + OWASP](md/Blog/Trend-micro.md)
+	- [Self-Hosting Chrome Extension](md/Blog/chrome-extension-deployment.md)
 - Books
-
-  - [Functional Programming](md/books/Grokking-simplicity.md)
-  - [Clean Code](md/books/Clean-code.md)
-
-- Programming
-
-  - [Java](md/programming/Java.md)
-  - [Rust](md/programming/Rust.md)
-  - [Using Git](md/programming/Git.md)
-  - [Concurency](md/programming/Concurent-resource-access.md)
-  - [Python unittest](md/programming/Python-unittesting.md)
-  - [Go](md/programming/Go.md)
-  - [Hamming Codes](md/programming/Hamming-codes.md)
-    - [React-Three-Fiber](md/programming/React-Three-Fiber.md)
-
-- Music
-
-  - [Modes](md/blog/Modes.md)
-  - [Seventh chords](md/blog/Sevenths.md)
-
+	- [Clean code](md/Books/Clean-code.md)
+	- [Gokking Simplicity - Functional programming](md/Books/Grokking-simplicity.md)
+- Linux
+	- [Docker](md/Linux/Docker.md)
+	- [Makefile](md/Linux/Makefile.md)
 - Notes
-  - MAT1348
-    - [Lec 1](md/notes/MAT1348/lec1.md)
-    - [Lec 2](md/notes/MAT1348/lec2.md)
-    - [Lec 3](md/notes/MAT1348/lec3.md)
+- Notes/MAT1348
+	- [Lec 1](md/Notes/MAT1348/lec1.md)
+	- [Lec 2 - Thu, 12th, 2022](md/Notes/MAT1348/lec2.md)
+	- [Lec 3 - Mon, 16 Jan](md/Notes/MAT1348/lec3.md)
+- Programming
+	- [Concurrent resource access and sharing](md/Programming/Concurent-resource-access.md)
+	- [Using Git](md/Programming/Git.md)
+	- [Go - Golang](md/Programming/Go.md)
+	- [Hamming Codes](md/Programming/Hamming-codes.md)
+	- [Java - ITI 1521](md/Programming/Java.md)
+	- [Python unittest](md/Programming/Python-unittesting.md)
+	- [React Three fiber](md/Programming/React-Three-Fiber.md)
+	- [React](md/Programming/React.md)
+	- [Rust lang](md/Programming/Rust.md)
+	- [TRPC - Typescript Remote Procedure Call](md/Programming/TRPC.md)

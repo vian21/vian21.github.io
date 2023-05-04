@@ -1,4 +1,4 @@
-# Propositions - either true or false
+# Lec 1
 
 ## negation &not;
 
