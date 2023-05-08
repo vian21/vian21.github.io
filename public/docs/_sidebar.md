@@ -8,6 +8,7 @@
 	- [Clean code](md/Books/Clean-code.md)
 	- [Gokking Simplicity - Functional programming](md/Books/Grokking-simplicity.md)
 - Linux
+	- [Dockerfile](md/Linux/Docker-file.md)
 	- [Docker](md/Linux/Docker.md)
 	- [Makefile](md/Linux/Makefile.md)
 - Notes
@@ -22,6 +23,7 @@
 	- [Go - Golang](md/Programming/Go.md)
 	- [Hamming Codes](md/Programming/Hamming-codes.md)
 	- [Java - ITI 1521](md/Programming/Java.md)
+	- [Open-cv - Python](md/Programming/Open-cv.md)
 	- [Python unittest](md/Programming/Python-unittesting.md)
 	- [React Three fiber](md/Programming/React-Three-Fiber.md)
 	- [React](md/Programming/React.md)
