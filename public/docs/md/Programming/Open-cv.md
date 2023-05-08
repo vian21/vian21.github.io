@@ -16,10 +16,6 @@ pip install matplotlib
 
 ### Video
 
-```python
- e
-```
-
 ### Color enum
 
 By default the camera returns BGR images

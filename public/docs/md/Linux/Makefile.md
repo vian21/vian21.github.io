@@ -44,7 +44,3 @@ cc := ${cc} # same as above but will allow assign other variables
 run:
     ${cc} main.c -o main
 ```
-
-```
-
-```
