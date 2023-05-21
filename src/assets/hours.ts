@@ -66,4 +66,10 @@ export const ProgrammingData: any = [
     type: ["Security"],
     languages: [],
   },
+  {
+    day: "May 01 2023 - May 7 2023",
+    hours: "10",
+    type: ["Web Development", "Backend"],
+    languages: [],
+  },
 ];

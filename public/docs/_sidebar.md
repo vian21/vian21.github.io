@@ -3,7 +3,9 @@
 	- [Seventh Chords](md/Blog/Sevenths.md)
 	- [Jest | Vitest](md/Blog/Testing.md)
 	- [Trend Micro + OWASP](md/Blog/Trend-micro.md)
+	- [Webserver.rs](md/Blog/Webserver-rs.md)
 	- [Self-Hosting Chrome Extension](md/Blog/chrome-extension-deployment.md)
+	- [Wiki.js](md/Blog/wikijs.md)
 - Books
 	- [Clean code](md/Books/Clean-code.md)
 	- [Gokking Simplicity - Functional programming](md/Books/Grokking-simplicity.md)
@@ -23,6 +25,7 @@
 	- [Go - Golang](md/Programming/Go.md)
 	- [Hamming Codes](md/Programming/Hamming-codes.md)
 	- [Java - ITI 1521](md/Programming/Java.md)
+	- [Leaflet](md/Programming/Leaflet.md)
 	- [Open-cv - Python](md/Programming/Open-cv.md)
 	- [Python unittest](md/Programming/Python-unittesting.md)
 	- [React Three fiber](md/Programming/React-Three-Fiber.md)
