@@ -97,3 +97,13 @@ clean code: - runs all tests - contains no `duplication` - minimizes the number 
 1. `Second Law`: Dont write more that a unit test that makes the test to fail (a test at a time)
 1. `Third Law`: Dont write more code than is sufficient to make the test pass.
 
+## Tests
+- Tests are as important as production code.
+- You should not write quick and dirty tests
+- Test gives production code flexibility to change since they allow you to modify production code knowing that if there are any errors they will be caught
+- So stick to TDD
+- Good test writing follows this workflow
+#### `Build` -> `Operate` -> `Check`
+1. Build: instanciate the required object or mock the classes being tested
+2. Operate: Pass data to the function being tested
+3. Check: check if the output is the same as the expected one.
