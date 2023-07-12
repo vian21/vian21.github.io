@@ -105,7 +105,14 @@ sudo mkdir -p /etc/opt/chrome/policies/managed
   - `force_installed`: background installed, can't disable and cant' delete.
 
 The extension will auto-install. If you try to download it. chrome will show an error but the extension will be installed none the less.
+### macOS
+- Source:
+  - Policy List should end with `.plist`
+  - https://www.chromium.org/administrators/mac-quick-start/
+  - https://support.google.com/chrome/a/answer/7517624?sjid=13577321849268106637-NA#permissions&zippy=%2Cprevent-users-from-running-apps-or-extensions-based-on-permissions
+- managed file is located in `~/Library/Preferences/com.google.Chrome.plist`
 
+-  Mandatory policy is stored in `/Library/Managed Preferences/<username>/com.google.Chrome.plist` while recommended policy is stored in `/Library/Preferences/com.google.Chrome.plist`
 ### Windows
 
 Windows requires that you modies Registry keys and this can be done using simple powershell commands.
