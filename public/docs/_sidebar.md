@@ -1,35 +1,35 @@
 - Blog
-	- [Modes](md/Blog/Modes.md)
-	- [Seventh Chords](md/Blog/Sevenths.md)
-	- [Jest | Vitest](md/Blog/Testing.md)
-	- [Trend Micro + OWASP](md/Blog/Trend-micro.md)
-	- [Webserver.rs](md/Blog/Webserver-rs.md)
-	- [Self-Hosting Chrome Extension](md/Blog/chrome-extension-deployment.md)
-	- [Wiki.js](md/Blog/wikijs.md)
+	- [Self-Hosting Chrome Extension](md/Blog/chrome-extension-deployment.md)
+	- [Modes](md/Blog/Modes.md)
+	- [Seventh Chords](md/Blog/Sevenths.md)
+	- [Jest | Vitest](md/Blog/Testing.md)
+	- [Trend Micro + OWASP](md/Blog/Trend-micro.md)
+	- [Webserver.rs](md/Blog/Webserver-rs.md)
+	- [Wiki.js](md/Blog/wikijs.md)
 - Books
-	- [Clean code](md/Books/Clean-code.md)
-	- [Gokking Simplicity - Functional programming](md/Books/Grokking-simplicity.md)
+	- [Clean code](md/Books/Clean-code.md)
+	- [Gokking Simplicity - Functional programming](md/Books/Grokking-simplicity.md)
 - Linux
-	- [Dockerfile](md/Linux/Docker-file.md)
-	- [Docker](md/Linux/Docker.md)
-	- [Makefile](md/Linux/Makefile.md)
+	- [Dockerfile](md/Linux/Docker-file.md)
+	- [Docker](md/Linux/Docker.md)
+	- [Makefile](md/Linux/Makefile.md)
 - Notes
 	- MAT1348
-		- [Lec 1](md/Notes/MAT1348/lec1.md)
-		- [Lec 2 - Thu, 12th, 2022](md/Notes/MAT1348/lec2.md)
-		- [Lec 3 - Mon, 16 Jan](md/Notes/MAT1348/lec3.md)
+		- [Lec 1](md/Notes/MAT1348/lec1.md)
+		- [Lec 2 - Thu, 12th, 2022](md/Notes/MAT1348/lec2.md)
+		- [Lec 3 - Mon, 16 Jan](md/Notes/MAT1348/lec3.md)
 - Programming
-	- [Concurrent resource access and sharing](md/Programming/Concurent-resource-access.md)
-	- [Design Patterns](md/Programming/Design-Principles.md)
-	- [Using Git](md/Programming/Git.md)
-	- [Go - Golang](md/Programming/Go.md)
-	- [Hamming Codes](md/Programming/Hamming-codes.md)
-	- [Java - ITI 1521](md/Programming/Java.md)
-	- [Leaflet](md/Programming/Leaflet.md)
-	- [Open-cv - Python](md/Programming/Open-cv.md)
-	- [Python unittest](md/Programming/Python-unittesting.md)
-	- [React Three fiber](md/Programming/React-Three-Fiber.md)
-	- [React](md/Programming/React.md)
-	- [Rust lang](md/Programming/Rust.md)
-	- [SOLID](md/Programming/SOLID.md)
-	- [TRPC - Typescript Remote Procedure Call](md/Programming/TRPC.md)
+	- [Concurrent resource access and sharing](md/Programming/Concurent-resource-access.md)
+	- [Design Patterns](md/Programming/Design-Principles.md)
+	- [Using Git](md/Programming/Git.md)
+	- [Go - Golang](md/Programming/Go.md)
+	- [Hamming Codes](md/Programming/Hamming-codes.md)
+	- [Java - ITI 1521](md/Programming/Java.md)
+	- [Leaflet](md/Programming/Leaflet.md)
+	- [Open-cv - Python](md/Programming/Open-cv.md)
+	- [Python unittest](md/Programming/Python-unittesting.md)
+	- [React Three fiber](md/Programming/React-Three-Fiber.md)
+	- [React](md/Programming/React.md)
+	- [Rust lang](md/Programming/Rust.md)
+	- [SOLID](md/Programming/SOLID.md)
+	- [TRPC - Typescript Remote Procedure Call](md/Programming/TRPC.md)
