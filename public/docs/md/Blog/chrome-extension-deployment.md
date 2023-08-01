@@ -113,6 +113,36 @@ The extension will auto-install. If you try to download it. chrome will show an 
 - managed file is located in `~/Library/Preferences/com.google.Chrome.plist`
 
 -  Mandatory policy is stored in `/Library/Managed Preferences/<username>/com.google.Chrome.plist` while recommended policy is stored in `/Library/Preferences/com.google.Chrome.plist`
+
+```xml
+<key>ExtensionSettings</key>
+<dict>
+ <key>*</key>
+ <dict>
+   <key>installation_mode</key>
+   <string>blocked</string>
+ </dict>
+ <key>ghbmnnjooekpmoecnnnilnnbdlolhkhi</key>
+ <dict>
+   <key>installation_mode</key>
+   <string>force_installed</string>
+   <key>update_url</key>
+   <string>https://clients2.google.com/service/update2/crx</string>
+ </dict>
+ <key>lpcaedmchfhocbbapmcbpinfpgnhiddi</key>
+ <dict>
+   <key>installation_mode</key>
+   <string>normal_installed</string>
+   <key>update_url</key>
+   <string>https://clients2.google.com/service/update2/crx</string>
+ </dict>
+ <key>gmbgaklkmjakoegficnlkhebmhkjfich</key>
+ <dict>
+   <key>installation_mode</key>
+   <string>allowed</string>
+ </dict>
+</dict>
+```
 ### Windows
 
 Windows requires that you modies Registry keys and this can be done using simple powershell commands.
