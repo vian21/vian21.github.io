@@ -14,10 +14,19 @@
 	- [Docker](md/Linux/Docker.md)
 	- [Makefile](md/Linux/Makefile.md)
 - Notes
-	- MAT1348
-		- [Lec 1](md/Notes/MAT1348/lec1.md)
-		- [Lec 2 - Thu, 12th, 2022](md/Notes/MAT1348/lec2.md)
-		- [Lec 3 - Mon, 16 Jan](md/Notes/MAT1348/lec3.md)
+	- uOttawa
+		- Year-1
+			- MAT1348
+				- [Lec 1](md/Notes/uOttawa/Year-1/MAT1348/lec1.md)
+				- [Lec 2 - Thu, 12th, 2022](md/Notes/uOttawa/Year-1/MAT1348/lec2.md)
+				- [Lec 3 - Mon, 16 Jan](md/Notes/uOttawa/Year-1/MAT1348/lec3.md)
+		- Year-2
+			- Fall
+				- [CEG2136](md/Notes/uOttawa/Year-2/Fall/CEG2136.md)
+				- [CHM1701](md/Notes/uOttawa/Year-2/Fall/CHM1701.md)
+				- [CSI2510](md/Notes/uOttawa/Year-2/Fall/CSI2510.md)
+				- [GNG2501](md/Notes/uOttawa/Year-2/Fall/GNG2501.md)
+				- [SEG2105](md/Notes/uOttawa/Year-2/Fall/SEG2105.md)
 - Programming
 	- [Concurrent resource access and sharing](md/Programming/Concurent-resource-access.md)
 	- [Design Patterns](md/Programming/Design-Principles.md)
