@@ -24,7 +24,7 @@
 			- Fall
 				- [CEG2136](md/Notes/uOttawa/Year-2/Fall/CEG2136.md)
 				- [CHM1701](md/Notes/uOttawa/Year-2/Fall/CHM1701.md)
-				- [CSI2510](md/Notes/uOttawa/Year-2/Fall/CSI2510.md)
+				- [CSI2510](md/Notes/uOttawa/Year-2/Fall/CSI2510.md)
 				- [GNG2501](md/Notes/uOttawa/Year-2/Fall/GNG2501.md)
 				- [SEG2105](md/Notes/uOttawa/Year-2/Fall/SEG2105.md)
 - Programming
