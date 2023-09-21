@@ -1,4 +1,9 @@
 | command | Character |
 | ------- | --------- |
 | \^2     | ²         |
-| \sigma | ∑ |
+| \sigma  | ∑         |
+| \pi     | ∏         |
+| \sqrt   | √         |
+| \sqrt[] | √[]       |
+| \lambda | λ         |
+| \delta  | δ         |
