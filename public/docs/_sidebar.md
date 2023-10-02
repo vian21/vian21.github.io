@@ -1,5 +1,6 @@
 - Blog
 	- [Self-Hosting Chrome Extension](md/Blog/chrome-extension-deployment.md)
+	- [Codename](md/Blog/Codename.md)
 	- [Interviews](md/Blog/Interviews.md)
 	- [Modes](md/Blog/Modes.md)
 	- [Seventh Chords](md/Blog/Sevenths.md)
