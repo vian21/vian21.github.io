@@ -11,23 +11,16 @@ export default function About() {
           </center>
 
           <p>
-            My name is Patrick Igiraneza, I am an enthusiastic Software/Web
-            developer. I am originally from Burundi which is a country found in
-            the east of Africa. I am currently enrolled at the university of
-            Ottawa in Software engineering(CO-OP) in French Immersion.
+            My name is Patrick Igiraneza and I am a passionate Software
+            developer. I am currently enrolled at the university of
+            Ottawa in Software engineering. I love tweaking software, making music and figuring stuff out.
           </p>
 
           <p>
-            I love tweaking software, making music and figuring stuff out. I
-            mainly play the electric guitar(for now) but I am also working on
-            improving my piano 🎹 skills as well as my musical ear. I play the
-            acoustic, bass, piano and unfortunately no drums(yet 😁).
-          </p>
-
-          <p>
+            I play the electric guitar, acoustic, bass, and piano.
             I have mostly worked on the web, exploring all its greatness and
-            beauty, and lately I have started gaining interest in embedded
-            software, operating systems and cybersecurity 🤖.
+            beauty, and lately I have started gaining an interest in embedded
+            software, operating systems and cybersecurity.
           </p>
 
           <p>Take a look of some cool stuff I have worked on!</p>

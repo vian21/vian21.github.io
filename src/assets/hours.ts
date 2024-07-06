@@ -1,3 +1,4 @@
+// TODO: make this an enum
 const workTypes = [
   "Web Development",
   "Frontend",
@@ -51,25 +52,37 @@ export const ProgrammingData: any = [
     day: "2017-2023",
     hours: "2100",
     type: ["Application"],
-    languages: ["C/C++"],
+    languages: ["C++"],
   },
   { day: "2017-2023", hours: "500", type: ["Embedded"], languages: ["Rust"] },
   {
     day: "2017-2023",
     hours: "600",
     type: ["Security"],
-    languages: ["Python", "PHP", "C/C++"],
-  },
-  {
-    day: "2017-2023",
-    hours: "200",
-    type: ["Security"],
-    languages: [],
+    languages: ["Python", "PHP", "C++"],
   },
   {
     day: "May 01 2023 - May 7 2023",
     hours: "10",
     type: ["Web Development", "Backend"],
-    languages: [],
+    languages: ["JS"],
+  },
+  {
+    day: "January 01 2024 - August 31 2024",
+    hours: "600",
+    type: ["Embedded"],
+    languages: ["C"],
+  },
+  {
+    day: "January 01 2024 - August 31 2024",
+    hours: "100",
+    type: ["Embedded"],
+    languages: ["Perl", "Lua"],
+  },
+  {
+    day: "January 01 2024 - August 31 2024",
+    hours: "40",
+    type: ["Web Development"],
+    languages: ["JS"],
   },
 ];
