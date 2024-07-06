@@ -1,0 +1,10 @@
+| command | Character |
+| ------- | --------- |
+| \^2     | ²         |
+| \sigma  | ∑         |
+| \pi     | ∏         |
+| \sqrt   | √         |
+| \sqrt[] | √[]       |
+| \lambda | λ         |
+| \delta  | δ         |
+| \/\-    | Δ         |
