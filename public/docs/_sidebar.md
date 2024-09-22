@@ -31,6 +31,9 @@
 				- [GNG2501](md/Notes/uOttawa/Year-2/Fall/GNG2501.md)
 				- [SEG2105](md/Notes/uOttawa/Year-2/Fall/SEG2105.md)
 				- [| command | Character |](md/Notes/uOttawa/Year-2/Fall/cheat-sheet.md)
+			- Fall-2
+				- [Programmation en C++](md/Notes/uOttawa/Year-2/Fall-2/CSI2772.md)
+				- [Ingeniere des exigences](md/Notes/uOttawa/Year-2/Fall-2/SEG3501.md)
 - Programming
 	- [Concurrent resource access and sharing](md/Programming/Concurent-resource-access.md)
 	- [Design Patterns](md/Programming/Design-Principles.md)
