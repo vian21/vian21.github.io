@@ -1,7 +1,7 @@
 
 // custom-prism-languages.js
 (function() {
-  const languages = ["bash", "python", "php", "rust", "java"];
+  const languages = ["bash", "python", "php", "rust", "java", "cpp", "go"];
   const version = "1";
 
   function loadScript(src) {
