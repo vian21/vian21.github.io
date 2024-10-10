@@ -6,7 +6,7 @@
 
 ## Install
 
-```sh
+```bash
 pip install opencv-python
 
 pip install matplotlib
@@ -152,45 +152,50 @@ cv2.destroyAllWindows()
 
 - Panoramas using stichers
 - Homography: map 2 images using key points/descriptors and crop out unecessar regions
-    - using orb_create class
-    - detectAndCompute
-    - descriptor matcher
+  - using orb_create class
+  - detectAndCompute
+  - descriptor matcher
 - edge == countours
 - edge != corners
 
 ## Object tracking
+
 - Track an object in subsequent frames
 - OpenCV Algorithms:
-    - boosting
-    - Mil
-    - KCF
-    - CRST
-    - Goturn: deep learning based with frozen inference model
-    - Mosse: fastest
+  - boosting
+  - Mil
+  - KCF
+  - CRST
+  - Goturn: deep learning based with frozen inference model
+  - Mosse: fastest
+
 ## Face Detection
+
 - Have to use a Neural Network to do so. OpenCV can not be use to trai a nn but u can perfrom inference on it.
 
 ## Obejct detection
+
 - Detect objects in picture and what they are.
 - nn required
 - SSD: single sot Multi-Box
-    - detect multiple objects in on forward pass in the inference model
+  - detect multiple objects in on forward pass in the inference model
 - https://github.com/tensorflow/models
 - Frozen Inference graph -> weights and biases
 - config file -> input nodes and layers
 - cv2.dnn.readNetFromTensorflow
 - cv2.dnn.readNetFromCaffe
-- need to do on input image the same preprossing that was done on the test data. i.e resizing, blur, size(weight and height), RGB or BGR, resolution, Grayscale or color. 
+- need to do on input image the same preprossing that was done on the test data. i.e resizing, blur, size(weight and height), RGB or BGR, resolution, Grayscale or color.
+
 #### `Format Conversion Step`
-- cv2.dnn.blobFromImage(image, Scale_factor, dnn_input_size,mean_?,Swap, crop=true/false)
+
+- cv2.dnn.blobFromImage(image, Scale*factor, dnn_input_size,mean*?,Swap, crop=true/false)
+
 ## Pose estimation - Skeleton
--  pose_pairs
+
+- pose_pairs
 - imageweight = im.shape[0]
 - imageHeight = im.shpae[1]
--  
-
+-
 
 Proto file?
 how is model saved?
-
- 

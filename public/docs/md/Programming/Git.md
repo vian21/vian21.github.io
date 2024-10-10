@@ -6,7 +6,7 @@
 
 Start you project locally then run the following commands in the terminal:
 
-```sh
+```bash
 git init -b main
 git add .
 git commit -m "add a message"
@@ -14,7 +14,7 @@ git commit -m "add a message"
 
 - now create a repository on github then use the commands they show you for an existing repository
 
-```sh
+```bash
 git remote add origin <Remote URL>
 git push origin main
 ```
@@ -23,7 +23,7 @@ git push origin main
 
 Every time your done working/making changes to your project, run:
 
-```sh
+```bash
 git add .
 git commit -m "commit message"
 git push
@@ -33,7 +33,7 @@ git push
 
 Git clone is used to copy an online repository to your computer. You can git clone using the github link(HTTPS), using SSH or just download a zip directly from Github.
 
-```sh
+```bash
 git clone https://github.com/<USERNAME>/<REPOSITORY>
 ```
 
@@ -41,7 +41,7 @@ git clone https://github.com/<USERNAME>/<REPOSITORY>
 
 Git pull is using to update your local branch with the online one. You do this to see to see if there has been some changed on the branch i.e someone has pushed code on it or you made somechanges online or on another machine.
 
-```sh
+```bash
 git pull
 ```
 
@@ -51,7 +51,7 @@ Branches help us prevent merge conflicts which arise when two people work on the
 
 TO create a new branch:
 
-```sh
+```bash
 git checkout -b branchName
 ```
 
@@ -62,14 +62,14 @@ git checkout -b branchName
 
 Git checkout allows you to change branch and see what other branch contain. You can switch from your branch to the `main` branch or somebody else's to see what they are working then you can `git pull` to update your local copy of the branch.
 
-```sh
+```bash
 # git checkout branchName
 git checkout main # switch to the main branch or git switch main
 ```
 
 ### Renaming a branch
 
-```sh
+```bash
 git branch -M <NewName>
 ```
 
@@ -79,7 +79,7 @@ NOTE: Merging is done on the main branch
 
 ### 1. Commit & Push to your branch
 
-```sh
+```bash
 git add .
 git commit -m "commit message(REQUIRED)"
 git push
@@ -87,7 +87,7 @@ git push
 
 ### 2. Update your local main branch
 
-```sh
+```bash
 git checkout main
 git pull
 ```
@@ -96,7 +96,7 @@ git pull
 
 This is where the 'magic' happens.
 
-```sh
+```bash
 git merge branchName
 ```
 
@@ -128,7 +128,7 @@ The manager will either merge your pull request or give you an OK to merge the P
 
 ### Updating your branch with what is in the main branch
 
-```sh
+```bash
 git checkout main         # go to the main branch
 git pull                  # update it
 git checkout branchName   # go back to your branch
@@ -139,7 +139,7 @@ git merge main          # merge the latest main into your
 
 First, view git history:
 
-```sh
+```bash
 git log --oneline # or git log - to view full commit ids, dates and time
 git revert <Commit ID>
 ```

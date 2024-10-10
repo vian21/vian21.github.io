@@ -2,14 +2,14 @@
 
 - Dockerfile is used to spin a single container
 
-```sh
+```bash
 FROM ubuntu:latest
 RUN echo "hello world"
 CMD ["echo", "hello world"]
 port 80
 ```
 
-```sh
+```bash
 # Use the official Node.js image as the base image
 FROM node:16
 
@@ -40,12 +40,12 @@ CMD ["node", "src/index.js"]
 - `ENTRYPOINT`: sets a default application to be used every time a container is created with the image.
 - `EXPOSE`: tells container to listen on specific port internally but does not actually publish the port.
 
-```sh
+```bash
 EXPOSE 80
 
 ```
 
-```sh
+```bash
 docker run -p 80:80 <image>
 ```
 

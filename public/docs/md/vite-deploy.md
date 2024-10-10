@@ -14,7 +14,7 @@ Use a bash script to:
 1. Build the project
 1. Push the build to a remote repository that will only contain those static assets
 
-```sh
+```bash
 #!/usr/bin/env sh
 
 # abort on errors

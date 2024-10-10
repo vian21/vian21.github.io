@@ -8,7 +8,7 @@ Automate compilation and running of programs/ large project
 - cmd: make
 - tabs matter
 
-```make
+```makefile
 run:
     echo "Hello world"
 ```
@@ -17,7 +17,7 @@ Output:
 
 - the command is shown on the screen
 
-```make
+```makefile
 echo "Hello world"
 Hello world
 ```
@@ -26,7 +26,7 @@ Hello world
 
 ## Running multiple tasks/targets
 
-```make
+```makefile
 all: compile run clean_up
 compile:
 	@javac Main.java
@@ -38,7 +38,7 @@ clean_up:  Main.class # target: dependecy, means the target wont be run if this 
 
 # Variables
 
-```make
+```makefile
 cc=gcc
 cc := ${cc} # same as above but will allow assign other variables
 run:

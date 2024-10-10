@@ -1,8 +1,11 @@
 # Rust lang
 
 ## Datatypes
+
 Rust supports the following datatypes
+
 1. integers: `i8`,`i16`,`i32`,`i64`, `i128`, `isize` and their unsigned counterpart
+
 ```rust
 //Signed integers
 x:i32 = 12;
@@ -16,10 +19,12 @@ x:u64=12221212;
 x:isize=+-12;
 z:usize=12;
 ```
+
 1. floats: `f32`, `f64`
 1. boolean: `isRobot:bool=true`
 
 ## strings
+
 ## Arrays, tuples & lits
 
 ## Structs

@@ -39,11 +39,11 @@ One downside to this is that chrome by default packages to `.crx2` which is depr
 
 A solution to this is packaging the extension to CRX3 using a npm package called [crx3](https://github.com/ahwayakchih/crx3)
 
-```sh
+```bash
 npm i -g crx3
 ```
 
-```sh
+```bash
 crx3 extension -o extension.crx -p -x update.xml
 ```
 
@@ -105,14 +105,16 @@ sudo mkdir -p /etc/opt/chrome/policies/managed
   - `force_installed`: background installed, can't disable and cant' delete.
 
 The extension will auto-install. If you try to download it. chrome will show an error but the extension will be installed none the less.
+
 ### macOS
+
 - Source:
   - Policy List should end with `.plist`
   - https://www.chromium.org/administrators/mac-quick-start/
   - https://support.google.com/chrome/a/answer/7517624?sjid=13577321849268106637-NA#permissions&zippy=%2Cprevent-users-from-running-apps-or-extensions-based-on-permissions
 - managed file is located in `~/Library/Preferences/com.google.Chrome.plist`
 
--  Mandatory policy is stored in `/Library/Managed Preferences/<username>/com.google.Chrome.plist` while recommended policy is stored in `/Library/Preferences/com.google.Chrome.plist`
+- Mandatory policy is stored in `/Library/Managed Preferences/<username>/com.google.Chrome.plist` while recommended policy is stored in `/Library/Preferences/com.google.Chrome.plist`
 
 ```xml
 <key>ExtensionSettings</key>
@@ -143,6 +145,7 @@ The extension will auto-install. If you try to download it. chrome will show an 
  </dict>
 </dict>
 ```
+
 ### Windows
 
 Windows requires that you modies Registry keys and this can be done using simple powershell commands.
@@ -222,7 +225,7 @@ Using [javascript-obfuscator](https://github.com/javascript-obfuscator/javascrip
 
 - can be installed globally or locally. (if installed locally add `npx` before the command)
 
-```sh
+```bash
 npm i -g javascript-obfuscator
 ```
 

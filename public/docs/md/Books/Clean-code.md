@@ -79,31 +79,38 @@ clean code: - runs all tests - contains no `duplication` - minimizes the number 
 - data structures are set of data elements operated on by implied functions
 
 ## Boundaries
-- setting boundaries between code you won and code you dont own 
+
+- setting boundaries between code you won and code you dont own
 
 ### 1. Wroking with undocumented library
+
 - setup interfaces for the `perfect` API and when the code comes live declare function that implement those interfaces.
 - Always prefer to use code that you own and wrote than relying on third party libraries that could break down your system in an update.
 - Test software you dont own. `Learning tests`
 - Having interfaces for software you dont own makes it easier for you to seamlessly change implementation and library.
--"Good software designs accomodate change without huge investments and work"
+- "Good software designs accomodate change without huge investments and work"
 - code at Boundaries is the most critical and we must ensure there is a clear separation of concerns between our software and third party libraries.
 - Our code should not know anything about third party libraries
 - `It is better to depend on something you control than depending on something you dont, lest it ends up controlling you`
 
 # TDD- Test Driven Development
+
 ## 3 laws of TDD
-1. `First Law`: Dont write code before writing a unit test that fails 
+
+1. `First Law`: Dont write code before writing a unit test that fails
 1. `Second Law`: Dont write more that a unit test that makes the test to fail (a test at a time)
 1. `Third Law`: Dont write more code than is sufficient to make the test pass.
 
 ## Tests
+
 - Tests are as important as production code.
 - You should not write quick and dirty tests
 - Test gives production code flexibility to change since they allow you to modify production code knowing that if there are any errors they will be caught
 - So stick to TDD
 - Good test writing follows this workflow
+
 #### `Build` -> `Operate` -> `Check`
+
 1. Build: instanciate the required object or mock the classes being tested
 2. Operate: Pass data to the function being tested
 3. Check: check if the output is the same as the expected one.
