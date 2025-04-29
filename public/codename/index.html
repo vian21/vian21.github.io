@@ -1,237 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Codename Job Search Extension</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="main.css" />
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <div id="navbar">
-      <span id="logo"><a href="index.html">Codename</a></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codename Job - Your All-in-One Job Search Companion</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <script src="https://kit.fontawesome.com/91420e5b2e.js" crossorigin="anonymous"></script>
+</head>
 
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="terms.html">Privacy & Terms</a></li>
-      </ul>
-    </div>
-    <div id="cover">
-      <center>
-        <h1>Codename</h1>
-        <h3>Job search made easy!</h3>
-      </center>
-    </div>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Codename Job</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#policies">Policies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cta-button">
+                <a href="https://chromewebstore.google.com/detail/codename-job/joidnlgoojilpfmnbdmcpgmfhgoocnnd"
+                    target="_blank" class="btn btn-primary">Add to Chrome</a>
+            </div>
+        </div>
+    </header>
 
-    <div class="tab">
-      <center>
-        <button class="tablinks Windows" onclick="toggleTab('Windows')">
-          Windows
-        </button>
-        <button class="tablinks macOs" onclick="toggleTab('macOs')">
-          macOs
-        </button>
-        <button class="tablinks Linux" onclick="toggleTab('Linux')">
-          Linux
-        </button>
-      </center>
-    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your All-in-One Job Search Companion</h1>
+                <p>Streamline your job hunt with a unified feed from top job boards and automatic application form
+                    filling.</p>
+                <div class="hero-buttons">
+                    <a href="https://chromewebstore.google.com/detail/codename-job/joidnlgoojilpfmnbdmcpgmfhgoocnnd"
+                        target="_blank" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="preview.png" alt="Codename Job Chrome Extension Interface">
+            </div>
+        </div>
+    </section>
 
-    <div id="Windows" class="tabcontent">
-      <h3>Install Codename on MS Windows</h3>
-      <ol>
-        <li>
-          Download our windows installer from
-          <a
-            href="https://superlative-tiramisu-19bb1f.netlify.app/win-installer.msi"
-            target="_blank"
-            >here</a
-          >
-        </li>
-        <li>Run the installer to whitelist the extension in chrome and .</li>
-        <li>
-          Download the extension from
-          <a
-            href="https://superlative-tiramisu-19bb1f.netlify.app/extension.zip"
-            target="_blank"
-            >here</a
-          >.
-        </li>
-        <li>
-          Unzip the <b>extension.zip</b>, and drag and drop the <b>.crx</b> file to
-          <a href="chrome://extensions" target="_blank">chrome://extensions</a>
-          page in Google Chrome and/or Brave. <b>NOTE:</b> Turn on <u>Developer Mode</u>.
-        </li>
-      </ol>
-    </div>
+    <section class="job-boards">
+        <div class="container">
+            <h2>One Extension, Multiple Job Boards</h2>
+            <div class="boards-grid">
+                <div class="board-logo">
+                    <img src="Indeed-Logo.png" alt="Indeed Logo">
+                </div>
+                <div class="board-logo">
+                    <img src="Linkedin-Logo.png" alt="LinkedIn Logo">
+                </div>
+                <div class="board-logo">
+                    <img src="canada.svg" alt="Canada Job Bank Logo">
+                </div>
+                <div class="board-logo">
+                    <p>+ More Coming Soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div id="macOs" class="tabcontent">
-      <h3>Install Codename on macOs</h3>
-      <p>- To install the extension in Google Chrome and/or Brave on macOS:</p>
-      <ol>
-        <li>
-          Download this
-          <a
-            href="https://superlative-tiramisu-19bb1f.netlify.app/com.codename.install.mobileconfig"
-            target="_blank"
-            >mobileconfig</a
-          >
-          file.
-        </li>
-        <li>
-          Once downloaded, double click the mobileconfig file to begin
-          installation.
-        </li>
-        <li>
-          Install the profile ("Codename Installer") in your system preferences:
-        </li>
-        <ul>
-          <li>
-            <b>Big Sur</b>: choose Apple menu 🍎 > System Preferences, then click
-            Profiles.
-          </li>
-          <li>
-            <b>Sonoma</b>: Choose Apple menu 🍎 > System Settings, click Privacy and
-            Security in the sidebar, then click Profiles on the right.
-          </li>
-        </ul>
-        <li>
-          Download the extension from
-          <a
-            href="https://superlative-tiramisu-19bb1f.netlify.app/extension.zip"
-            target="_blank"
-            >here</a
-          >.
-        </li>
-        <li>
-          Unzip the <b>extension.zip</b>, and drag and drop the <b>.crx</b> file to
-          <a href="chrome://extensions" target="_blank">chrome://extensions</a>
-          page in Google Chrome and/or Brave. <b>NOTE:</b> Turn on <u>Developer Mode</u>.
-        </li>
-      </ol>
-    </div>
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features That Make Job Hunting Easier</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <h3>Unified Job Feed</h3>
+                    <p>See all job listings from multiple platforms in one convenient place.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Auto Form Filling</h3>
+                    <p>Save time with automatic application form filling based on your profile.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Job Alerts</h3>
+                    <p>Get notified when new jobs matching your criteria are posted.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    <h3>Save & Track</h3>
+                    <p>Bookmark interesting jobs and track your application status.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div id="Linux" class="tabcontent">
-      <h3>Install Codename on Linux</h3>
-      <p>Run</p>
-      <pre>
-            curl https://superlative-tiramisu-19bb1f.netlify.app/install.sh | sudo sh
-        </pre
-      >
-      <p>- The extension should be installed in your chosen browser!</p>
-    </div>
-    <div style="margin: auto; width: 80%; margin-bottom: 10px">
-      <h1>Usage</h1>
-      <p>Follow the installation guide and fill in your profile.</p>
-      <p>
-        After filling in your profile, the extension will start to fetch jobs in
-        the background. The initial fetch may take a few seconds, but subsequent
-        fetches will be faster. Dont forget to pin the extension for quick
-        access.
-      </p>
-      <p>
-        After filling in your profile, you should be able to use the following
-        bindings on whatever website. The extension will fill in the
-        corresponding profile attributes for you.
-      </p>
-      <table>
-        <tr>
-          <th>Binding</th>
-          <th>Filled attribute</th>
-        </tr>
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How Codename Job Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Install the Extension</h3>
+                        <p>Add Codename Job to your Chrome browser with just one click.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Create Your Profile</h3>
+                        <p>Enter your work experience, skills, and preferences once.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Browse Unified Feed</h3>
+                        <p>View job listings from multiple platforms in one place.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Apply with One Click</h3>
+                        <p>Let Codename Job fill application forms automatically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <tr>
-          <td>/f</td>
-          <td>First name</td>
-        </tr>
-        <tr>
-          <td>/l</td>
-          <td>Last name</td>
-        </tr>
-        <tr>
-          <td>/e</td>
-          <td>Email</td>
-        </tr>
-        <tr>
-          <td>/p</td>
-          <td>Phone</td>
-        </tr>
-        <tr>
-          <td>/in</td>
-          <td>LinkedIn</td>
-        </tr>
-        <tr>
-          <td>/git</td>
-          <td>GitHub</td>
-        </tr>
-        <tr>
-          <td>/w</td>
-          <td>Website</td>
-        </tr>
-        <tr>
-          <td>/a0</td>
-          <td>Address line 1</td>
-        </tr>
-        <tr>
-          <td>/a1</td>
-          <td>Address line 2</td>
-        </tr>
-        <tr>
-          <td>/at</td>
-          <td>Address city</td>
-        </tr>
-        <tr>
-          <td>/ap</td>
-          <td>Address province</td>
-        </tr>
-        <tr>
-          <td>/ac</td>
-          <td>Address country</td>
-        </tr>
-        <tr>
-          <td>/ax</td>
-          <td>Address postal code</td>
-        </tr>
-      </table>
-    </div>
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial-content">
+                <p class="quote">"Codename Job cut my job application time in half. I've saved countless hours by not
+                    having to browse multiple job boards and fill out the same forms over and over."</p>
+                <p class="author">Anonymous user</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Simple, Transparent Pricing</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card highlight">
+                    <div class="pricing-header">
+                        <h3>Free Trial</h3>
+                        <p class="price">14 Days</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Full access to all features</li>
+                            <li>Unlimited job searches</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="https://chromewebstore.google.com/detail/codename-job/joidnlgoojilpfmnbdmcpgmfhgoocnnd"
+                            class="btn btn-primary">Start Free Trial</a>
+                    </div>
+                    <p class="no-credit-card">No credit card required</p>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <p class="price">$5.00<span> / 4 months</span></p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>All free trial features</li>
+                            <li>Unlimited auto-filled applications</li>
+                            <li>Advanced job matching</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-cta">
+                        <a href="https://buy.stripe.com/test_bIYeYq08A96G0yQfYY" target="_blank"
+                            class="btn btn-secondary">Subscribe Now</a>
+                    </div>
+                </div>
+            </div>
+            <p class="pricing-note">All payments processed securely through Stripe</p>
+        </div>
+    </section>
+
+    <section id="policies" class="policies">
+        <div class="container">
+            <h2>Our Policies</h2>
+            <div class="policies-grid">
+                <div class="policy-card">
+                    <h3>Return Policy</h3>
+                    <p>If you're not satisfied with Codename Job, you can request a return within 30 days of purchase.
+                        All returns are processed through Stripe, our payment processor.</p>
+                </div>
+                <div class="policy-card">
+                    <h3>Refund Policy</h3>
+                    <p>We offer a full refund if requested within 30 days of purchase. After this period, refunds are
+                        provided on a prorated basis. Disputes can be filed through Stripe or by contacting our support
+                        team.</p>
+                </div>
+                <div class="policy-card">
+                    <h3>Cancellation Policy</h3>
+                    <p>You can cancel your subscription at any time. Your access will continue until the end of your
+                        current billing period. No partial refunds are provided for mid-cycle cancellations.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="policy-card privacy-card">
+                <h3>Privacy</h3>
+                <p>At Codename Job, we value your privacy and collect only the information necessary to enhance your
+                    job search experience. When you sign up for our Chrome extension, we gather your name, email
+                    address, job titles, and location to personalize job recommendations, facilitate communication,
+                    and tailor opportunities to your preferences. We do not collect any additional data beyond what
+                    you provide during signup. Your information is used solely to deliver and improve our services,
+                    and we are committed to safeguarding it in accordance with applicable laws.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>We're Here to Help</h3>
+                    <p>Have questions about Codename Job? Our team is ready to assist you.</p>
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <p>info.codenamejob@gmail.com</p>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-clock"></i>
+                        <p>Response time: Within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Job Search?</h2>
+            <p>Join thousands of job seekers who have streamlined their application process with Codename Job.</p>
+            <a href="https://chromewebstore.google.com/detail/codename-job/joidnlgoojilpfmnbdmcpgmfhgoocnnd"
+                target="_blank" class="btn btn-primary">Start Your Free 14-Day Trial</a>
+        </div>
+    </section>
+
     <footer>
-      <span
-        >Made by
-        <a href="https://www.stephcraft.net/" target="_blank">Stephcraft</a> &
-        <a href="https://vian21.github.io" target="_blank"
-          >Patrick Igiraneza</a
-        ></span
-      >
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Codename Job</h2>
+                    <p>Your all-in-one job search companion</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Product</h3>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#policies">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="https://vian21.github.io/" target="_blank">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="https://vian21.github.io/docs/#/md/Blog/Codename">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Codename Job. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/vian21"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/patrick31"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script>
-      window.onload = (event) => {
-        console.log(navigator.appVersion);
-        if (navigator.userAgent.indexOf("Win") != -1) {
-          toggleTab("Windows");
-        } else if (navigator.userAgent.indexOf("Mac") != -1) {
-          toggleTab("macOs");
-        } else if (navigator.userAgent.indexOf("Linux") != -1) {
-          toggleTab("Linux");
-        }
-      };
+</body>
 
-      function toggleTab(osname) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        //hide all tabs
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        document.getElementById(osname).style.display = "block";
-        document.getElementsByClassName(osname).className += " active";
-      }
-    </script>
-  </body>
 </html>
