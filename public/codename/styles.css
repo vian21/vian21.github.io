@@ -427,9 +427,48 @@ nav a:hover {
   margin-top: 20px;
 }
 
+/* shortcuts Section */
+.shortcuts {
+  background-color: var(--section-bg);
+}
+
+.shortcuts table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.shortcuts th {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.shortcuts td {
+  padding: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.shortcuts td:first-child {
+  font-weight: bold;
+}
+
+.shortcuts tr:hover {
+  background-color: var(--secondary-color);
+}
+
+.shortcuts th:first-child,
+.shortcuts td:first-child {
+  width: 30%;
+}
+
 /* Contact Section */
 .contact {
-  background-color: var(--section-bg);
+  background-color: white;
 }
 
 .contact-content {
