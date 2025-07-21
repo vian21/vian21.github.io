@@ -20,7 +20,7 @@
   }
   languages.forEach((lang) => {
     loadScript(
-      `https://cdn.jsdelivr.net/npm/prismjs@${version}/components/prism-${lang}.min.js`
+      `https://cdn.jsdelivr.net/npm/prismjs@${version}/components/prism-${lang}.min.js`,
     );
   });
 })();

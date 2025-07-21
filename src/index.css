@@ -30,8 +30,10 @@ html.dark .nav-link {
 }
 
 h1,
-p {
+p,
+a {
   @apply m-3;
+  @apply text-base;
 }
 /* } */
 

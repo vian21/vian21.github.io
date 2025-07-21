@@ -2,10 +2,10 @@ export default function Contacts() {
   return (
     <div className="">
       <center>
-        <h1 className="p-3 text-2xl font-bold">Contacts</h1>
+        <h1 className="p-3 text-4xl font-bold">Contacts</h1>
       </center>
 
-      <div className="m-auto w-2/5">
+      <div className="grid m-auto w-11/12">
         <p>
           <span className="font-bold">Name</span>: Patrick Igiraneza
         </p>

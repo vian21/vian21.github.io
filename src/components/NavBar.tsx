@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { inDarkMode } from "../assets/utils";
 
 function NavLinks(props: { hidden: boolean }) {
   if (props.hidden) return <></>;
@@ -46,28 +47,23 @@ function NavLinks(props: { hidden: boolean }) {
 }
 
 export default function NavBar() {
-  function inDarkMode() {
-    if (document.documentElement.classList.contains("dark")) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
   function toggleMode() {
+    let theme;
     if (inDarkMode()) {
       document.documentElement.classList.remove("dark");
 
-      localStorage.setItem("theme", "light");
-
+      theme = "light";
       setMode(false);
     } else {
       document.documentElement.classList.add("dark");
 
-      localStorage.setItem("theme", "dark");
-
+      theme = "dark";
       setMode(true);
     }
+
+    const event = new Event("themeChange");
+    document.dispatchEvent(event);
+    localStorage.setItem("theme", theme);
   }
 
   const dark = localStorage.getItem("theme") === "dark" ? true : false;
@@ -85,6 +81,7 @@ export default function NavBar() {
 
     return true;
   }
+
   useEffect(() => {
     if (inDarkMode()) {
       setMode(true);
@@ -127,9 +124,6 @@ export default function NavBar() {
 
           {/* dark mode toggle */}
           <li onClick={toggleMode}>
-            {/* <button className="nav-link" onClick={toggleMode}>
-              Dark Mode
-            </button> */}
             {mode ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
